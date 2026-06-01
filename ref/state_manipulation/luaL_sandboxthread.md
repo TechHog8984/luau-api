@@ -27,7 +27,7 @@ int run_script(const std::string& name, const std::string& bytecode) {
 	lua_remove(L, -3);
 	lua_xmove(L, script, 1);
 
-	lua_sandboxthread(script);
+	luaL_sandboxthread(script);
 
 	int status = lua_resume(script, nullptr, 0);
 	// ...handle status
