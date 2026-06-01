@@ -164,6 +164,13 @@ sections:
       - userdata_functions/lua_setuserdatadtor.md
       - userdata_functions/lua_getuserdatadtor.md
       - userdata_functions/lua_isuserdata.md
+      - userdata_functions/lua_registeruserdatadirectaccess.md
+      - userdata_functions/lua_registeruserdatadirectfieldget.md
+      - userdata_functions/lua_userdatadirectfield_setnumber.md
+      - userdata_functions/lua_userdatadirectfield_setvector.md
+      - userdata_functions/lua_userdatadirectfield_setboolean.md
+      - userdata_functions/lua_userdatadirectfield_setinteger64.md
+      - userdata_functions/lua_userdatadirectfield_setnil.md
       - userdata_functions/luaL_checkudata.md
   - name: Light Userdata Functions
     functions:

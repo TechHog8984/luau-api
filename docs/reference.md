@@ -3122,6 +3122,117 @@ Returns `1` if the value at the given stack index is a userdata object. Otherwis
 ----
 
 
+### <span class="subsection">`lua_registeruserdatadirectaccess`</span>
+
+<span class="signature">`int lua_registeruserdatadirectaccess(lua_State* L, int tag, lua_UserdataDirectAccess get, lua_UserdataDirectAccess set, lua_UserdataDirectNamecall namecall)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `L`: Lua thread
+- `tag`: Userdata tag
+- `get`: Getter
+- `set`: Setter
+- `namecall`: Namecall
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_registeruserdatadirectfieldget`</span>
+
+<span class="signature">`int lua_registeruserdatadirectfieldget(lua_State* L, int tag, const char* field, lua_UserdataDirectFieldGet fn)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `L`: Lua thread
+- `tag`: Userdata tag
+- `field`: Field
+- `fn`: Getter function
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_userdatadirectfield_setnumber`</span>
+
+<span class="signature">`void lua_userdatadirectfield_setnumber(void* result, double n)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `result`: Result
+- `n`: Number
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_userdatadirectfield_setvector`</span>
+
+<span class="signature">`void lua_userdatadirectfield_setvector(void* result, double x, double y, double z)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `result`: Result
+- `x`: Number
+- `y`: Number
+- `z`: Number
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_userdatadirectfield_setboolean`</span>
+
+<span class="signature">`void lua_userdatadirectfield_setboolean(void* result, int b)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `result`: Result
+- `b`: Boolean
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_userdatadirectfield_setinteger64`</span>
+
+<span class="signature">`void lua_userdatadirectfield_setinteger64(void* result, int64_t n)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `result`: Result
+- `n`: Integer
+
+
+TODO.
+
+
+----
+
+
+### <span class="subsection">`lua_userdatadirectfield_setnil`</span>
+
+<span class="signature">`void lua_userdatadirectfield_setnil(void* result)`</span>
+<span class="stack">`[-0, +0, -]`</span>
+
+- `result`: Result
+
+
+TODO.
+
+
+----
+
+
 ### <span class="subsection">`luaL_checkudata`</span>
 
 <span class="signature">`void* luaL_checkudata(lua_State* L, int ud, const char* name)`</span>
