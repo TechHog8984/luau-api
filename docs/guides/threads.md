@@ -11,7 +11,7 @@ Some possible use-cases for coroutines in Luau:
 
 ## Creating Threads
 
-The top global state (e.g. calling `lua_newstate()`) is a `lua_State` object. Threads are _also_ `lua_State` objects. Thus, coroutine threads can be thought of as sub-states of sorts. However, they all belong to the top-level main state (which an be retrieved using `lua_mainstate()`). Threads can communicate with each other as long as they share the same main state.
+The top global state (e.g. calling `lua_newstate()`) is a `lua_State` object. Threads are _also_ `lua_State` objects. Thus, coroutine threads can be thought of as sub-states of sorts. However, they all belong to the top-level main state (which can be retrieved using `lua_mainstate()`). Threads can communicate with each other as long as they share the same main state.
 
 To create a new thread, call `lua_newthread(L)`, where `L` is the parent thread.
 
